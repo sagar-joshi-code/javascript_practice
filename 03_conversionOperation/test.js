@@ -39,8 +39,48 @@
 
 let number=undefined
 let stringInnumber=String(number)
-console.log(stringInnumber);
-console.log(typeof stringInnumber);
+// console.log(stringInnumber);
+// console.log(typeof stringInnumber);
+
+
+      
+            //   *************Operations*********************
+
+//   let value=3
+//   let negativeValue=-value
+//   console.log(negativeValue);
+
+//   console.log(2+2);
+//   console.log(2-2);
+//   console.log(2*2);
+//   console.log(4**4);    // ** for finding square
+//   console.log(2/2);
+//   console.log(2%2);
+
+
+/*
+post increament
+first print the value of a then only increasse the value of a by one
+*/
+// let a=5
+// console.log(a++)           
+// console.log(a)
+
+
+/*
+pre increament
+first increase the value of a by 1 then only prints the value of a
+*/
+// let a=5
+// console.log(++a);
+// console.log(a);
+
+
+
+
+
+
+
 
 
 
