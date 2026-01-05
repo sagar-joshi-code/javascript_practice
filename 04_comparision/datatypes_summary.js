@@ -51,16 +51,16 @@ Assignment always copies the value → original unaffected
 
 //heap memory(non-primitive)=object,function,array
 
-let userOne={
-    name:"sagar",
-    roll:10
+// let userOne={
+//     name:"sagar",
+//     roll:10
 
-}
-let userTwo=userOne
-userTwo.name="dipesh"
-// console.log(userOne);
-console.log(userTwo);
-console.log(userOne)
+// }
+// let userTwo=userOne
+// userTwo.name="dipesh"
+// // console.log(userOne);
+// console.log(userTwo);
+// console.log(userOne)
 
 
 /*
@@ -73,6 +73,26 @@ from the above example of heap or non-primitive datatype  the original data is a
 in conclusion from both 
 primitive(stack) ma aru data ko copy pauxa and in non-primitive(heap) ma aru data ko original copy pauxa 
 */
+
+
+
+
+
+
+let valOne={
+    name:"sagar",
+    age:20
+
+}
+let valTwo=valOne
+valTwo.name="hitesh"
+console.log(valTwo);
+console.log(valOne);
+
+
+
+
+
 
 
 
