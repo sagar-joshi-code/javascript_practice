@@ -1,5 +1,6 @@
 
 
+
 const myDetails={
     name:"sagar",
     age:20,
@@ -17,18 +18,18 @@ delete myDetails.isLoggedIn;
 // console.log(myDetails);
 
 // *******************phone Object demo*************************
-const myPhone={
-    brand:"iphone",
-    model:"16 promax",
-    price:"200k",
-    isWorking:true,
-};
-// console.log(myPhone.brand);
-myPhone.model="17 promax"
-// console.log(myPhone.model);
-myPhone.isGood=true;
-// console.log(myPhone);
-delete myPhone.isGood;
+// const myPhone={
+//     brand:"iphone",
+//     model:"16 promax",
+//     price:"200k",
+//     isWorking:true,
+// };
+// // console.log(myPhone.brand);
+// myPhone.model="17 promax"
+// // console.log(myPhone.model);
+// myPhone.isGood=true;
+// // console.log(myPhone);
+// delete myPhone.isGood;
 // console.log(myPhone);
 
 
@@ -91,13 +92,13 @@ BankDetails.function()
 
 
 
-const light={
-    on:function(){
-        // console.log("light is on");
+// const light={
+//     on:function(){
+//         // console.log("light is on");
         
-    }
-}
-light.on()
+//     }
+// }
+// light.on()
 
 
 
@@ -112,14 +113,14 @@ fan.function()
 
 
 
-const door={
-    isOn:true,
-    openDoor:function(){
+// const door={
+    // isOn:true,
+    // openDoor:function(){
         // console.log("door is open");
         
-    }
-}
-door.openDoor()
+//     }
+// }
+// door.openDoor()
 
 
 
@@ -133,17 +134,17 @@ door.openDoor()
 // phone.showBattery()
 
 
-const user={
-    username:"sagar",
-    login:function(){
-        // console.log(this.username + "logged in");
+// const user={
+//     username:"sagar",
+//     login:function(){
+//         // console.log(this.username + "logged in");
         
-    }
-}
-user.login()
+//     }
+// }
+// user.login()
  
-user.username="ram"
-user.login()
+// user.username="ram"
+// user.login()
 
 
 
@@ -161,13 +162,13 @@ const bag={
 
 
 
-const facebook={
-    username:"sagarjoshi",
-    profile:{
-        bio:"its me sagar joshi",
-        followers:100,
-    }
-}
+// const facebook={
+//     username:"sagarjoshi",
+//     profile:{
+//         bio:"its me sagar joshi",
+//         followers:100,
+//     }
+// }
 // console.log(facebook.profile.bio)
 // console.log(facebook.profile.followers)
 
@@ -193,35 +194,233 @@ const facebook={
 
 
 
-const phone={
-    brand:"iphone",
-    model:"14 pro",
-    battery:50,
-    showBattery:function(){
-        // console.log(this.battery+"%");
+// const phone={
+//     brand:"iphone",
+//     model:"14 pro",
+//     battery:50,
+//     showBattery:function(){
+//         // console.log(this.battery+"%");
+        
+//     }
+
+
+// }
+// phone.showBattery()
+
+
+
+
+// const instagram={
+//     username:"Sagar Joshi",
+//     profile:{
+//         followers:100,
+//         bio:"Love to talk about tech",
+//         showFollower:function(){
+//             // console.log(this.followers +"followers");
+            
+//         }
+//     }
+
+// }
+// instagram.profile.showFollower()
+
+
+
+
+
+
+
+// const door={
+//     isOpen:false,
+//     openDoor:function(){
+//         this.isOpen=true;
+//     }
+
+// }
+// door.openDoor()
+// // console.log(door.isOpen);
+
+
+
+
+// // const new_user={
+//     isLoggedIn:false,
+//     login:function(){
+//         this.isLoggedIn=true;
+//     }
+// }
+// new_user.login()
+// // console.log(new_user.isLoggedIn)
+
+//task_1
+const light={
+    isOn:false,
+    turnOn:function(){
+        this.isOn=true;
+        
         
     }
 
-
 }
-phone.showBattery()
+light.turnOn()
+// console.log(light.isOn);
 
 
-
-
+//task_2
 const instagram={
-    username:"Sagar Joshi",
-    profile:{
-        followers:100,
-        bio:"Love to talk about tech",
-        showFollower:function(){
-            // console.log(this.followers +"followers");
-            
-        }
-    }
+    followers:100,
+    addFollower:function(){
+        this.followers++;
 
+    }
 }
-instagram.profile.showFollower()
+instagram.addFollower()
+// console.log(instagram.followers);
+
+
+
+const facebook={
+    username:"Sagar joshi",
+    followers:200,
+    addFollower:function(){
+        this.followers++;
+    }
+}
+facebook.addFollower()
+facebook.addFollower()
+// console.log(facebook.followers);
+
+// const viber={
+//     follower:100,
+//     addFollower:function(){
+//         this.follower ++;
+//     }
+// }
+// viber.addFollower()
+// console.log(viber.follower)
+
+//old way to access any details from object
+// const old_user={
+//     username:"Sagar Joshi",
+//     followers:100,
+//     isLoggedIn:true,
+
+// }
+// console.log(old_user.username)
+// console.log(old_user.followers);
+// console.log(old_user.isLoggedIn)
+
+
+
+const phone ={
+    brand:"iphone",
+    model:"17 pro max",
+    price:"200k"
+}
+const{brand,model,price}=phone
+// console.log(brand,model,price)
+
+
+
+// const user={
+//     username:"Sagar Joshi",
+//     followers:0,
+//     isLoggedIn:false,
+//     login:function(){
+//         this.isLoggedIn=true
+//     },
+//     addFollower:function(){
+//         this.followers++
+//     },
+//     logOut:function(){
+//         this.isLoggedIn=false;
+//     },
+//     showProfile:function(){
+//         console.log(this.username)
+//         console.log(this.followers)
+//         console.log(this.isLoggedIn)
+//     }
+   
+ 
+   
+// };
+// user.login()
+// user.addFollower()
+// user.logOut()
+// console.log(user.isLoggedIn);
+// console.log(user.followers);
+// user.showProfile()
+
+//using destructor for aaccessing username,follower,isLoggedIn
+// const{username,followers,isLoggedIn}=user
+// console.log(username,followers,isLoggedIn)
+
+
+
+
+const user = 
+  {
+    userName: "Sagar Joshi",
+    followers: 0,
+    isLoggedIn: false,
+    logIn: function () {
+      this.isLoggedIn = true;
+    },
+    logOut: function () {
+      this.isLoggedIn = false;
+    },
+    addFollower: function () {
+      this.followers++;
+    },
+    removeFollower: function () {
+      if (this.followers > 0) {
+        this.followers--;
+      } else {
+        console.log(this.userName + "has no follower to remove!");
+      }
+    },
+    showProfile: function () {
+      console.log(this.userName);
+      console.log(this.followers);
+      console.log(this.isLoggedIn);
+    },
+    }
+    user.logIn()
+    user.addFollower()
+    // console.log(user.followers)
+    // console.log(user.isLoggedIn)
+
+     user.showProfile()
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
