@@ -49,10 +49,6 @@ orderCoffee("Binod Joshi","Large","Cappuccino")
 const myShopping=(price,quantity)=>{
     return price*quantity
 }
-let newTotal=myShopping(100,2)
-console.log(total)
-let tax=total *0.13     //this is only demo of tax checking 
-console.log(tax)    
 
 
 
@@ -68,6 +64,15 @@ let calculateTax=total * 0.13
 console.log(`  tax : ${calculateTax}`)
 let totalAfterTax=total + calculateTax
 console.log(`final price after tax : ${totalAfterTax}`)
+
+myShopping(100,2)
+let tax=total *0.13     //this is only demo of tax checking 
+console.log(total)
+console.log(tax)    
+
+
+
+
 
 
 
